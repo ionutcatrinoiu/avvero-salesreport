@@ -812,6 +812,128 @@ body{
   .kpi-threshold-value,.kpi-threshold-gap{text-align:left}
 }
 
+
+/* Rezumat creștere necesară pentru atingerea targetului de 100% */
+.target-growth-summary{
+  margin:12px 0 0;
+  padding:15px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#f8fafc;
+}
+.target-growth-summary h3{
+  margin:0;
+  font-size:15px;
+}
+.target-growth-summary .sub{
+  margin:4px 0 12px;
+}
+.target-growth-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.target-growth-item{
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  padding:13px;
+}
+.target-growth-item small{
+  display:block;
+  color:var(--muted);
+  font-weight:700;
+  font-size:11px;
+}
+.target-growth-item b{
+  display:block;
+  margin-top:7px;
+  font-size:20px;
+}
+.target-growth-item span{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.4;
+}
+@media(max-width:800px){
+  .target-growth-grid{grid-template-columns:1fr}
+}
+
+
+/* Analiza realismului targeturilor vs T2 2025 */
+.target-realism-analysis{
+  margin-top:12px;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+}
+.target-realism-analysis h3{
+  margin:0;
+  font-size:16px;
+}
+.target-realism-analysis .sub{
+  margin:5px 0 14px;
+}
+.target-realism-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.target-realism-card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  background:#fbfcff;
+}
+.target-realism-card h4{
+  margin:0;
+  font-size:14px;
+}
+.target-realism-card .target-growth{
+  display:block;
+  margin-top:9px;
+  font-size:23px;
+  font-weight:800;
+}
+.target-realism-card .target-base{
+  margin-top:5px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
+.target-realism-card .realism-badge{
+  display:inline-flex;
+  margin-top:10px;
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:11px;
+  font-weight:800;
+}
+.realism-ok{background:#e8f7f1;color:#087854}
+.realism-warn{background:#fff7e8;color:#a45d00}
+.realism-bad{background:#fff0f1;color:#c92f3e}
+.target-realism-card p{
+  margin:10px 0 0;
+  color:#556074;
+  font-size:12px;
+  line-height:1.55;
+}
+.target-realism-conclusion{
+  margin-top:12px;
+  padding:13px 14px;
+  border-radius:13px;
+  background:#f6f8fc;
+  color:#475467;
+  font-size:12px;
+  line-height:1.6;
+}
+@media(max-width:800px){
+  .target-realism-grid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -952,6 +1074,65 @@ body{
       <div class="target-line"><span>Achievement</span><b class="neg">0%</b></div>
       <div class="progress-track"><div class="progress-fill bad" style="width:96.9%"></div></div>
       <div class="achievement-badge bad">44.685 lei sub primul prag</div>
+    </div>
+  </div>
+
+
+  <div class="target-growth-summary">
+    <h3>Creștere necesară pentru atingerea obiectivelor la 100%</h3>
+    <div class="sub">Diferența dintre rezultatul realizat și targetul de 100% pentru fiecare KPI.</div>
+    <div class="target-growth-grid">
+      <div class="target-growth-item">
+        <small>KPI 1, Clienți unici facturați</small>
+        <b>+3 clienți</b>
+        <span>de la 144 la 147 clienți, adică o creștere de aproximativ 2,1%</span>
+      </div>
+      <div class="target-growth-item">
+        <small>KPI 2, RX cantitativ</small>
+        <b>+691 bucăți</b>
+        <span>de la 3.434 la 4.125 bucăți, adică o creștere de aproximativ 20,1%</span>
+      </div>
+      <div class="target-growth-item">
+        <small>KPI 3, Net Sales</small>
+        <b>+119.430 lei</b>
+        <span>de la 1.375.476 lei la 1.494.906 lei, adică o creștere de aproximativ 8,7%</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="target-realism-analysis">
+    <h3>Analiza targetului față de T2 2025</h3>
+    <div class="sub">Evaluarea nivelului de creștere solicitat pentru atingerea obiectivelor la 100%.</div>
+
+    <div class="target-realism-grid">
+      <div class="target-realism-card">
+        <h4>KPI 1, Clienți unici facturați</h4>
+        <span class="target-growth pos">+5,8%</span>
+        <div class="target-base">T2 2025: 139 clienți · Target 100%: 147 clienți</div>
+        <span class="realism-badge realism-ok">Realist</span>
+        <p>Targetul presupune doar 8 clienți suplimentari față de T2 2025. Rezultatul de 144 de clienți confirmă că obiectivul a fost bine calibrat și a rămas la numai 3 clienți distanță.</p>
+      </div>
+
+      <div class="target-realism-card">
+        <h4>KPI 2, RX cantitativ</h4>
+        <span class="target-growth neg">aprox. +36%</span>
+        <div class="target-base">T2 2025: aproximativ 3.040 bucăți · Target 100%: 4.125 bucăți</div>
+        <span class="realism-badge realism-bad">Foarte agresiv</span>
+        <p>O creștere anuală de aproximativ 36% este dificil de susținut fără schimbări majore de portofoliu, clienți noi sau transfer de volume. Acesta este cel mai dificil KPI și principalul factor care limitează achievementul total.</p>
+      </div>
+
+      <div class="target-realism-card">
+        <h4>KPI 3, Net Sales</h4>
+        <span class="target-growth neg">+26,7%</span>
+        <div class="target-base">T2 2025: 1.180.341 lei · Target 100%: 1.494.906 lei</div>
+        <span class="realism-badge realism-warn">Agresiv</span>
+        <p>Targetul este ridicat, dar mai realist decât KPI 2 deoarece poate fi influențat și prin mixul de produse și valoarea medie pe comandă, nu doar prin creșterea volumului.</p>
+      </div>
+    </div>
+
+    <div class="target-realism-conclusion">
+      <b>Concluzie:</b> KPI 1 este realist și bine calibrat. KPI 2 este foarte agresiv, iar KPI 3 este agresiv. Deși vânzările T2 2026 au crescut cu 18,4% față de T2 2025, KPI 2 și KPI 3 au rămas la 0% achievement, ceea ce indică praguri suficient de ridicate încât o performanță comercială bună să nu fie reflectată proporțional în sistemul de bonusare.
     </div>
   </div>
 
