@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <title>Analiză vânzări S1 2026 vs 2025</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f4f7fb;--panel:#fff;--ink:#172033;--muted:#6b7588;--line:#e5eaf2;--blue:#246bfd;--green:#0f9f6e;--red:#df3b4b;--amber:#d97706;--shadow:0 12px 34px rgba(31,45,70,.08)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{width:100%;max-width:none;margin:0;padding:22px 24px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.brand h1{margin:0;font-size:clamp(23px,3vw,36px);letter-spacing:-.04em}.brand p{margin:6px 0 0;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn,.select,.search{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 13px;color:var(--ink);font:inherit}.btn{cursor:pointer;font-weight:700}.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)}.grid{display:grid;grid-template-columns:repeat(5,minmax(160px,1fr));gap:12px}.card,.panel{background:var(--panel);border:1px solid rgba(229,234,242,.8);border-radius:18px;box-shadow:var(--shadow)}.card{padding:17px}.card small{color:var(--muted);font-weight:650}.card b{display:block;font-size:25px;margin-top:8px}.card .delta{font-size:13px;margin-top:5px}.pos{color:var(--green)!important}.neg{color:var(--red)!important}.neutral{color:var(--muted)!important}.main{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(360px,.8fr);gap:14px;margin-top:14px;width:100%}.panel{padding:18px}.panel h2{margin:0 0 3px;font-size:17px}.sub{color:var(--muted);font-size:13px;margin-bottom:14px}.bars{height:270px;display:flex;align-items:flex-end;gap:10px;padding:20px 8px 30px;border-bottom:1px solid var(--line);position:relative}.bar-group{height:100%;flex:1;display:flex;align-items:flex-end;justify-content:center;gap:5px;position:relative}.bar{width:34%;min-width:13px;border-radius:7px 7px 2px 2px;transition:.25s;position:relative}.bar.y25{background:#aab6ca}.bar.y26{background:var(--blue)}.bar:hover{filter:brightness(.93)}.month-label{position:absolute;bottom:-25px;width:100%;text-align:center;font-size:11px;color:var(--muted)}.legend{display:flex;gap:16px;margin-top:36px;font-size:12px;color:var(--muted)}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:5px}.donut-wrap{display:grid;grid-template-columns:160px 1fr;align-items:center;gap:16px;min-height:270px}.donut{width:155px;height:155px;border-radius:50%;position:relative}.donut:after{content:"";position:absolute;inset:28px;border-radius:50%;background:white}.donut-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;flex-direction:column}.donut-center b{font-size:24px}.status-list{display:grid;gap:10px}.status-row{display:flex;justify-content:space-between;gap:8px;font-size:13px}.controls{display:grid;grid-template-columns:minmax(220px,1fr) 170px 170px 170px;gap:10px;margin:15px 0 10px}.search{width:100%}.table-wrap{overflow:auto;max-height:620px;border:1px solid var(--line);border-radius:14px}table{border-collapse:separate;border-spacing:0;width:100%;min-width:1050px;background:#fff}th,td{padding:11px 12px;border-bottom:1px solid var(--line);font-size:12px;text-align:right;white-space:nowrap}th{position:sticky;top:0;background:#f8fafc;z-index:3;color:#556074;cursor:pointer}th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:inherit;z-index:2;max-width:310px;overflow:hidden;text-overflow:ellipsis}th:first-child{z-index:4;background:#f8fafc}tr:hover td{background:#f5f8ff}tr:hover td:first-child{background:#f5f8ff}.badge{display:inline-flex;border-radius:999px;padding:4px 8px;font-weight:700;font-size:11px}.badge.Nou{background:#e8f7f1;color:#087854}.badge.Pierdut{background:#fff0f1;color:#bf2536}.badge.Creștere{background:#edf3ff;color:#1d59d7}.badge.Scădere{background:#fff1ed;color:#c2412d}.badge.Stabil{background:#f1f3f6;color:#596273}.footer{color:var(--muted);font-size:12px;margin:13px 2px}.modal{position:fixed;inset:0;background:rgba(15,23,42,.54);display:none;align-items:center;justify-content:center;padding:18px;z-index:10}.modal.open{display:flex}.modal-card{width:min(920px,100%);max-height:92vh;overflow:auto;background:white;border-radius:20px;padding:20px;box-shadow:0 24px 80px rgba(0,0,0,.25)}.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.close{border:0;background:#eef2f7;border-radius:50%;width:36px;height:36px;font-size:20px;cursor:pointer}.client-chart{height:280px;display:flex;align-items:flex-end;gap:13px;padding:25px 10px 35px;border-bottom:1px solid var(--line)}.client-group{height:100%;flex:1;display:flex;gap:6px;align-items:flex-end;justify-content:center;position:relative}.client-bar{width:32%;border-radius:7px 7px 2px 2px}.client-month{position:absolute;bottom:-26px;font-size:11px;color:var(--muted)}
@@ -438,10 +441,340 @@ body{
 .table-wrap th:nth-child(6),.table-wrap td:nth-child(6){width:13%!important}
 .group-row td{width:auto!important}
 
+
+/* Login Sales Report, model SPHERA */
+.sales-login-screen{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.14fr .86fr;
+  background:#f4f7fb;
+  color:#172033;
+}
+.sales-login-hero{
+  min-height:100vh;
+  padding:56px 72px;
+  display:flex;
+  align-items:center;
+}
+.sales-login-hero-content{
+  width:100%;
+  max-width:720px;
+  transform:translateY(-35px);
+}
+.sales-login-logo{
+  width:300px;
+  height:auto;
+  display:block;
+  margin-left:-95px;
+  margin-bottom:-118px;
+}
+.sales-login-eyebrow{
+  margin-bottom:14px;
+  color:#556074;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.sales-login-hero h1{
+  margin:0;
+  color:#101d36;
+  font-size:clamp(58px,7vw,92px);
+  line-height:.9;
+  letter-spacing:-.065em;
+}
+.sales-login-subtitle{
+  max-width:650px;
+  margin:20px 0 0;
+  color:#667085;
+  font-size:18px;
+  line-height:1.45;
+  font-weight:600;
+}
+.sales-login-tags{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:26px;
+}
+.sales-login-tags span{
+  display:inline-flex;
+  align-items:center;
+  min-height:42px;
+  padding:0 18px;
+  border:1px solid #e1e7f0;
+  border-radius:999px;
+  background:rgba(255,255,255,.86);
+  box-shadow:0 12px 30px rgba(31,45,70,.06);
+  color:#344054;
+  font-size:13px;
+  font-weight:750;
+}
+.sales-login-panel{
+  min-height:100vh;
+  padding:48px 56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.sales-login-card{
+  width:min(430px,100%);
+  min-height:390px;
+  padding:38px 28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.95);
+  border-radius:30px;
+  background:rgba(255,255,255,.9);
+  box-shadow:0 36px 90px rgba(36,107,253,.15);
+}
+.sales-login-card-logo{
+  width:190px;
+  height:auto;
+  display:block;
+  margin:0 auto -26px;
+}
+.sales-login-card-title{
+  margin:0;
+  color:#74839a;
+  font-size:18px;
+  font-weight:500;
+}
+.sales-login-card h2{
+  margin:7px 0 0;
+  color:#101d36;
+  font-size:27px;
+  letter-spacing:-.04em;
+}
+.sales-login-platform{
+  margin:12px 0 26px;
+  color:#74839a;
+  font-size:14px;
+  line-height:1.4;
+}
+.sales-login-password{
+  width:100%;
+  border:1px solid #d8e0ec;
+  border-radius:18px;
+  padding:16px 18px;
+  background:#fff;
+  color:#172033;
+  font-size:16px;
+  font-weight:750;
+  outline:none;
+}
+.sales-login-password:focus{
+  border-color:#246bfd;
+  box-shadow:0 0 0 4px rgba(36,107,253,.12);
+}
+.sales-login-enter{
+  width:100%;
+  margin-top:14px;
+  border:0;
+  border-radius:18px;
+  padding:15px 18px;
+  background:#246bfd;
+  color:#fff;
+  font-size:15px;
+  font-weight:800;
+  box-shadow:0 14px 28px rgba(36,107,253,.24);
+  cursor:pointer;
+}
+.sales-login-enter:hover{
+  background:#1558dc;
+  transform:translateY(-1px);
+}
+.sales-login-error{
+  min-height:18px;
+  margin:12px 0 0;
+  color:#df3b4b;
+  font-size:12px;
+  font-weight:700;
+}
+#salesApp[hidden],
+#salesLogin[hidden]{
+  display:none!important;
+}
+@media(max-width:900px){
+  .sales-login-screen{grid-template-columns:1fr}
+  .sales-login-hero{
+    min-height:auto;
+    padding:48px 22px 26px;
+    text-align:center;
+    justify-content:center;
+  }
+  .sales-login-hero-content{transform:none}
+  .sales-login-logo{width:160px;margin:0 auto 8px}
+  .sales-login-hero h1{font-size:52px}
+  .sales-login-subtitle{font-size:15px}
+  .sales-login-tags{justify-content:center}
+  .sales-login-panel{
+    min-height:auto;
+    padding:18px 18px 42px;
+  }
+}
+
+
+/* Login Sales Report copiat 1:1 după proporțiile și fontul SPHERA */
+.sales-login-screen{
+  min-height:100vh !important;
+  display:grid !important;
+  grid-template-columns:1.14fr .86fr !important;
+  background:#F4F7FB !important;
+  color:#0B2230 !important;
+  position:relative !important;
+  overflow:hidden !important;
+  font-family:"Montserrat",Arial,sans-serif !important;
+}
+.sales-login-screen *{font-family:"Montserrat",Arial,sans-serif !important;box-sizing:border-box !important;}
+.sales-login-hero{
+  min-height:100vh !important;
+  padding:56px 72px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  position:relative !important;
+  z-index:1 !important;
+  overflow:hidden !important;
+}
+.sales-login-hero-content{
+  width:100% !important;
+  max-width:720px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  height:100vh !important;
+  transform:translateY(-70px) !important;
+}
+.sales-login-logo{
+  width:300px !important;
+  height:auto !important;
+  display:block !important;
+  margin-left:-95px !important;
+  margin-bottom:-140px !important;
+}
+.sales-login-eyebrow{
+  font-size:12px !important;
+  line-height:1.2 !important;
+  font-weight:800 !important;
+  color:#344054 !important;
+  margin-bottom:14px !important;
+  letter-spacing:.1px !important;
+  text-transform:none !important;
+}
+.sales-login-hero h1{
+  margin:0 !important;
+  font-size:77px !important;
+  line-height:.9 !important;
+  letter-spacing:-5px !important;
+  font-weight:900 !important;
+  color:#0B2230 !important;
+}
+.sales-login-subtitle{
+  max-width:660px !important;
+  margin:14px 0 0 !important;
+  color:#475467 !important;
+  font-size:18px !important;
+  line-height:1.35 !important;
+  font-weight:600 !important;
+}
+.sales-login-tags{display:flex !important;gap:12px !important;flex-wrap:wrap !important;margin-top:24px !important;}
+.sales-login-tags span{
+  display:inline-flex !important;align-items:center !important;justify-content:center !important;
+  min-height:42px !important;padding:0 18px !important;border-radius:999px !important;
+  background:rgba(255,255,255,.82) !important;border:1px solid rgba(228,231,236,.85) !important;
+  box-shadow:0 12px 30px rgba(16,24,40,.06) !important;color:#344054 !important;
+  font-size:13px !important;line-height:1 !important;font-weight:800 !important;
+}
+.sales-login-panel{
+  min-height:100vh !important;padding:48px 56px !important;display:flex !important;
+  align-items:center !important;justify-content:center !important;background:transparent !important;
+  position:relative !important;z-index:2 !important;
+}
+.sales-login-card{
+  width:min(430px,100%) !important;min-height:390px !important;
+  background:rgba(255,255,255,.86) !important;border:1px solid rgba(255,255,255,.92) !important;
+  border-radius:30px !important;box-shadow:0 36px 90px rgba(17,122,157,.16) !important;
+  padding:36px 26px !important;text-align:center !important;display:flex !important;
+  flex-direction:column !important;justify-content:center !important;align-items:center !important;
+  backdrop-filter:none !important;
+}
+.sales-login-card-title{margin:0 0 6px !important;color:#74839a !important;font-size:18px !important;line-height:1.2 !important;font-weight:500 !important;}
+.sales-login-card h2{margin:0 !important;font-size:24px !important;line-height:1.08 !important;letter-spacing:-.8px !important;font-weight:900 !important;color:#0B2230 !important;}
+.sales-login-platform{margin:12px 0 26px !important;color:#74839a !important;font-size:14px !important;line-height:1.35 !important;font-weight:500 !important;}
+.sales-login-password{
+  width:100% !important;border:1px solid #d8e0ec !important;border-radius:18px !important;
+  padding:16px 18px !important;font-size:16px !important;font-weight:800 !important;
+  color:#101828 !important;background:rgba(255,255,255,.92) !important;outline:none !important;box-shadow:none !important;
+}
+.sales-login-password::placeholder{color:#6d6d6d !important;opacity:1 !important;font-weight:800 !important;}
+.sales-login-password:focus{border-color:#165dff !important;box-shadow:0 0 0 3px rgba(22,93,255,.10) !important;}
+.sales-login-enter{
+  width:100% !important;border:0 !important;border-radius:18px !important;padding:15px 18px !important;
+  cursor:pointer !important;font-size:15px !important;line-height:1.2 !important;font-weight:900 !important;
+  color:#fff !important;background:#165dff !important;box-shadow:0 14px 28px rgba(22,93,255,.22) !important;
+  transition:all .18s ease !important;margin-top:14px !important;
+}
+.sales-login-enter:hover{background:#0b4ae8 !important;transform:translateY(-1px) !important;box-shadow:0 18px 36px rgba(22,93,255,.32) !important;}
+.sales-login-error{margin:12px 0 0 !important;min-height:18px !important;color:#f04438 !important;font-size:12px !important;line-height:1.45 !important;font-weight:700 !important;}
+@media (min-width:1440px){.sales-login-hero h1{font-size:90px !important}.sales-login-subtitle{font-size:19px !important}}
+@media (max-width:1180px){.sales-login-hero h1{font-size:66px !important}.sales-login-subtitle{font-size:16px !important}}
+@media (max-width:980px){
+  .sales-login-screen{grid-template-columns:1fr !important}
+  .sales-login-hero{min-height:auto !important;padding:42px 24px 28px !important;text-align:center !important;align-items:center !important}
+  .sales-login-hero-content{height:auto !important;transform:none !important;align-items:center !important}
+  .sales-login-logo{margin:0 auto 24px !important;width:142px !important}
+  .sales-login-eyebrow{font-size:11px !important;margin-bottom:18px !important}
+  .sales-login-hero h1{font-size:46px !important;letter-spacing:-3px !important}
+  .sales-login-subtitle{margin-top:18px !important;font-size:14px !important}
+  .sales-login-tags{justify-content:center !important;margin-top:26px !important}
+  .sales-login-panel{min-height:auto !important;padding:22px 18px 42px !important;background:transparent !important}
+  .sales-login-card{border-radius:26px !important;padding:30px 24px !important}
+}
+
 </style>
 </head>
 <body>
-<div class="app">
+
+<div class="sales-login-screen" id="salesLogin">
+  <section class="sales-login-hero">
+    <div class="sales-login-hero-content">
+      <img class="sales-login-logo" alt="Avvero" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPCEtLSBDcmVhdG9yOiBDb3JlbERSQVcgKE9FTSBWZXJzaW9uKSAtLT4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyMTBtbSIgaGVpZ2h0PSIyOTdtbSIgdmVyc2lvbj0iMS4xIiBzdHlsZT0ic2hhcGUtcmVuZGVyaW5nOmdlb21ldHJpY1ByZWNpc2lvbjsgdGV4dC1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyBpbWFnZS1yZW5kZXJpbmc6b3B0aW1pemVRdWFsaXR5OyBmaWxsLXJ1bGU6ZXZlbm9kZDsgY2xpcC1ydWxlOmV2ZW5vZGQiCnZpZXdCb3g9IjAgMCAyMTAwMCAyOTcwMCIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogeG1sbnM6eG9kbT0iaHR0cDovL3d3dy5jb3JlbC5jb20vY29yZWxkcmF3L29kbS8yMDAzIj4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CiAgIDwhW0NEQVRBWwogICAgLmZpbDQge2ZpbGw6IzU1QzBENjtmaWxsLXJ1bGU6bm9uemVyb30KICAgIC5maWwzIHtmaWxsOiM2RjNDOEQ7ZmlsbC1ydWxlOm5vbnplcm99CiAgICAuZmlsNSB7ZmlsbDojMTdBMUJGO2ZpbGwtcnVsZTpub256ZXJvfQogICAgLmZpbDIge2ZpbGw6IzExN0E5RDtmaWxsLXJ1bGU6bm9uemVyb30KICAgIC5maWwwIHtmaWxsOiMyNzMzMzg7ZmlsbC1ydWxlOm5vbnplcm99CiAgICAuZmlsMSB7ZmlsbDojMDBBMEUzO2ZpbGwtcnVsZTpub256ZXJvfQogICBdXT4KICA8L3N0eWxlPgogPC9kZWZzPgogPGcgaWQ9IkxheWVyX3gwMDIwXzEiPgogIDxtZXRhZGF0YSBpZD0iQ29yZWxDb3JwSURfMENvcmVsLUxheWVyIi8+CiAgPHBhdGggY2xhc3M9ImZpbDAiIGQ9Ik02ODI1LjM2IDE3OTM1LjYxYzAsMTM3LjQxIDgzLjEyLDIwNi4wMiAyNDkuMzksMjA2LjAybDMwMy42NSAwIDAgLTQxMi4wNyAtMzAzLjY1IDBjLTE2Ni4yNywwIC0yNDkuMzksNjguNjcgLTI0OS4zOSwyMDYuMDV6bTU1My4wNCAtMzU3LjljMCwtMTA0LjA3IC0yNy4xMSwtMTgwLjY5IC04MS4zMSwtMjI5Ljg3IC01NC4yNCwtNDkuMSAtMTI0LjcsLTczLjczIC0yMTEuNDgsLTczLjczIC02NS4wNCwwIC0xMjguNjksOS43NyAtMTkwLjg1LDI5LjIyIC02Mi4yLDE5LjU2IC0xMTcuODQsNDUuOTMgLTE2Nyw3OS4yMmwtNzUuOSAtMTMwLjE3YzMxLjc3LC0yMS42NiA2Ni44NiwtNDAuNDMgMTA1LjIyLC01Ni4zOCAzOC4yNiwtMTUuOSA3Ny42NiwtMjkuMjggMTE4LjE4LC00MC4xNCA0MC40NCwtMTAuNzkgODAuNTQsLTE5LjEyIDEyMC4zNSwtMjQuOTQgMzkuNzUsLTUuNzUgNzYuOTgsLTguNjEgMTExLjcyLC04LjYxIDkyLjQ3LDAgMTc0LjIsMTAuNzYgMjQ1LjA3LDMyLjQ5IDcwLjc5LDIxLjY5IDEzMC44Niw1Mi44MSAxODAsOTMuMjQgNDkuMTQsNDAuNTQgODYuMzgsODguNjIgMTExLjczLDE0NC4yNSAyNS4yNSw1NS42NyAzNy45MywxMTcuNDggMzcuOTMsMTg1LjQybDAgNzE1Ljc1IC02MDcuMzEgMGMtMTk2LjYxLDAgLTM0MS41NywtMjkuNiAtNDM0LjgxLC04OC45NyAtOTMuMjksLTU5LjIgLTEzOS45MSwtMTQ4Ljg3IC0xMzkuOTEsLTI2OC44OCAwLC0xMjAuMDMgNDYuNjIsLTIwOS42NyAxMzkuOTEsLTI2OC45NiA5My4yNCwtNTkuMjcgMjM4LjIsLTg4Ljk0IDQzNC44MSwtODguOTRsMzAzLjY1IDB6Ii8+CiAgPHBvbHlnb24gY2xhc3M9ImZpbDAiIHBvaW50cz0iODc1OC43NiwxODI5My40NiA4MjgxLjYzLDE4MjkzLjQ2IDc4NDcuODEsMTcxNjUuNTkgODE1MS40NiwxNzE2NS41OSA4NTA5LjM2LDE4MTA5LjExIDg1MzEuMDIsMTgxMDkuMTEgODg4OC44NiwxNzE2NS41OSA5MTkyLjUzLDE3MTY1LjU5ICIvPgogIDxwb2x5Z29uIGNsYXNzPSJmaWwwIiBwb2ludHM9IjEwMjE0Ljk5LDE4MjkzLjQ2IDk3MzcuODQsMTgyOTMuNDYgOTMwNC4wMSwxNzE2NS41OSA5NjA3LjY2LDE3MTY1LjU5IDk5NjUuNTcsMTgxMDkuMTEgOTk4Ny4yNCwxODEwOS4xMSAxMDM0NS4xLDE3MTY1LjU5IDEwNjQ4LjczLDE3MTY1LjU5ICIvPgogIDxwYXRoIGNsYXNzPSJmaWwwIiBkPSJNMTEzODcuNyAxNzI2My4yNGMtNDEuOTEsMCAtODAuOTcsNy45NSAtMTE3LjA2LDIzLjg1IC0zNi4xNiwxNS45MiAtNjcuNjYsNDEuMjEgLTk0LjM2LDc1LjkyIC0yNi43OCwzNC42OCAtNDguNTEsNzkuNTUgLTY1LjEzLDEzNC40OCAtMTYuNTgsNTQuOTYgLTI1LjY0LDEyMS40MiAtMjcuMDUsMTk5LjUzbDYwNy4yNyAwYzAsLTc1LjE1IC04LjY4LC0xNDAuMjMgLTI2LjA0LC0xOTUuMjMgLTE3LjM5LC01NC44OSAtNDAuMTQsLTEwMC4wOSAtNjguMzMsLTEzNS41IC0yOC4xOSwtMzUuNDYgLTYwLjcxLC02MS40OSAtOTcuNTgsLTc4LjA3IC0zNi44NiwtMTYuNjQgLTc0LjE1LC0yNC45OCAtMTExLjcyLC0yNC45OHptNzUuOTEgOTIxLjc4YzcwLjg4LDAgMTM2Ljk5LC0xMi4yOCAxOTguNDQsLTM2Ljg2IDYxLjQ5LC0yNC42MyAxMjEuODUsLTU5LjMxIDE4MS4xMiwtMTA0LjExbDg2Ljc4IDEzMC4xYy0yNy40OCwyNC42IC01OS42NSw0Ny4wMyAtOTYuNTIsNjcuMjEgLTM2Ljg2LDIwLjMyIC03Ni42OSwzNy4yOSAtMTE5LjMxLDUxLjA0IC00Mi42OSwxMy42NiAtODcuMSwyNC41NiAtMTMzLjM4LDMyLjQ5IC00Ni4yNSw3Ljk0IC05Mi41NCwxMS45MiAtMTM4LjgyLDExLjkyIC0xMDIuNjYsMCAtMTk2LjI1LC0xMy4zNiAtMjgwLjgxLC00MC4xIC04NC42MywtMjYuNzQgLTE1Ni41NywtNjUuOCAtMjE1Ljg3LC0xMTcuMTIgLTU5LjI2LC01MS4zIC0xMDUuMTMsLTExNC41OCAtMTM3LjY1LC0xODkuNzkgLTMyLjYsLTc1LjE1IC00OC44NiwtMTYxLjkgLTQ4Ljg2LC0yNjAuMjQgMCwtOTYuODYgMTUuNTYsLTE4My4yOSA0Ni42NywtMjU5LjE2IDMxLjA1LC03NS45NiA3NC40NywtMTM5LjU3IDEzMC4xMSwtMTkwLjg2IDU1LjY2LC01MS4zMyAxMjEuODEsLTkwLjM3IDE5OC40MywtMTE3LjE2IDc2LjYzLC0yNi42OSAxNjEuMjIsLTQwLjA3IDI1My43NiwtNDAuMDcgODYuNzgsMCAxNjguNDUsMTIuOTUgMjQ1LjE0LDM5LjAyIDc2LjU5LDI1Ljk5IDE0My4xMiw2My45NiAxOTkuNSwxMTMuODQgNTYuNDEsNDkuOTEgMTAxLjIxLDExMC4yOCAxMzQuNDgsMTgxLjEyIDMzLjI2LDcwLjg3IDQ5Ljg0LDE1MS4wOSA0OS44NCwyNDAuNzNsMCAxNTEuOCAtOTI2LjA3IDBjMTcuMzUsMTIwLjAyIDU4LjkxLDIwNi4wMiAxMjQuNzQsMjU4LjEyIDY1Ljc2LDUyLjA0IDE0OC41NSw3OC4wOCAyNDguMjgsNzguMDh6Ii8+CiAgPHBhdGggY2xhc3M9ImZpbDAiIGQ9Ik0xMzEyMi44MyAxNzMxNy40NGwtMjYwLjI0IDBjLTk4LjM2LDAgLTE3My41NywyNi40MiAtMjI1LjYsNzkuMTkgLTUyLjA0LDUyLjc4IC03OC4wNCwxMzEuMjQgLTc4LjA0LDIzNS4zNGwwIDY2MS40OSAtMzAzLjY3IDAgMCAtNjYxLjQ5YzAsLTE0Ny41IDQ2LjYsLTI2Mi4xMSAxMzkuOTEsLTM0My43NSA5My4yNCwtODEuNyAyMjcuMywtMTIyLjYzIDQwMi4zNSwtMTIyLjYzbDMyNS4yOSAwIDAgMTUxLjg1eiIvPgogIDxwYXRoIGNsYXNzPSJmaWwwIiBkPSJNMTM4MzguNDggMTgxOTUuODhjNDYuMjgsMCA4OS43MSwtOC43MSAxMzAuMSwtMjYuMDcgNDAuNjQsLTE3LjMyIDc1Ljg1LC00NC40NCAxMDYuMzcsLTgxLjMgMzAuMzMsLTM2LjkxIDU0LjUsLTg0LjkyIDcyLjYsLTE0NC4zIDE4LjA2LC01OS4yIDI3LjIsLTEzMC44IDI3LjIsLTIxNC42NSAwLC04My44MyAtOS4xNCwtMTU1LjQ1IC0yNy4yLC0yMTQuNzIgLTE4LjEsLTU5LjI2IC00Mi4yNywtMTA3LjM3IC03Mi42LC0xNDQuMjQgLTMwLjUyLC0zNi45IC02NS43MywtNjMuOTcgLTEwNi4zNywtODEuMzYgLTQwLjM5LC0xNy4yOCAtODMuODIsLTI2IC0xMzAuMSwtMjYgLTQ2LjI1LDAgLTg5LjcxLDguNzIgLTEzMC4xMSwyNiAtNDAuMzksMTcuMzkgLTc1Ljg0LDQ0LjQ2IC0xMDYuMzksODEuMzYgLTMwLjI3LDM2Ljg3IC01NC40Nyw4NC45OCAtNzIuNTcsMTQ0LjI0IC0xOC4wNiw1OS4yNyAtMjYuOTksMTMwLjg5IC0yNi45OSwyMTQuNzIgMCw4My44NSA4LjkzLDE1NS40NSAyNi45OSwyMTQuNjUgMTguMSw1OS4zOCA0Mi4zLDEwNy4zOSA3Mi41NywxNDQuMyAzMC41NSwzNi44NiA2Niw2My45OCAxMDYuMzksODEuMyA0MC40LDE3LjM2IDgzLjg2LDI2LjA3IDEzMC4xMSwyNi4wN3ptMCAtMTA3My41N2M5Ni45OCwwIDE4Ni4yMywxMy4zOCAyNjcuOTcsNDAuMDcgODEuNDUsMjYuNzkgMTUxLjQ4LDY1LjgzIDIwOS4yMywxMTcuMTYgNTcuNzUsNTEuMjkgMTAzLjA4LDExNC45IDEzNS41LDE5MC44NiAzMi42Myw3NS44NyA0OC44NiwxNjIuMyA0OC44NiwyNTkuMTYgMCw5OC4zNCAtMTYuMjMsMTg1LjA5IC00OC44NiwyNjAuMjQgLTMyLjQyLDc1LjIxIC03Ny43NSwxMzguNDkgLTEzNS41LDE4OS43OSAtNTcuNzUsNTEuMzIgLTEyNy43OCw5MC4zOCAtMjA5LjIzLDExNy4xMiAtODEuNzQsMjYuNzQgLTE3MC45OSw0MC4xIC0yNjcuOTcsNDAuMSAtOTguMzksMCAtMTg3Ljg5LC0xMy4zNiAtMjY4Ljg5LC00MC4xIC04MS4wMywtMjYuNzQgLTE1MC4zMiwtNjUuOCAtMjA4LjMxLC0xMTcuMTIgLTU3Ljc5LC01MS4zIC0xMDIuOTEsLTExNC41OCAtMTM1LjQ0LC0xODkuNzkgLTMyLjU5LC03NS4xNSAtNDguODYsLTE2MS45IC00OC44NiwtMjYwLjI0IDAsLTk2Ljg2IDE2LjI3LC0xODMuMjkgNDguODYsLTI1OS4xNiAzMi41MywtNzUuOTYgNzcuNjUsLTEzOS41NyAxMzUuNDQsLTE5MC44NiA1Ny45OSwtNTEuMzMgMTI3LjI4LC05MC4zNyAyMDguMzEsLTExNy4xNiA4MSwtMjYuNjkgMTcwLjUsLTQwLjA3IDI2OC44OSwtNDAuMDd6Ii8+CiAgPHBhdGggY2xhc3M9ImZpbDEiIGQ9Ik0xMTU1MC41IDEyMDYyLjQ2bDczLjggMTkwLjM1Yy0yMi4yMiwtNjQuMzQgLTQ2Ljg4LC0xMjcuODggLTczLjgsLTE5MC4zNXoiLz4KICA8cGF0aCBjbGFzcz0iZmlsMiIgZD0iTTk0MTAuOTQgMTQxNDIuMDFjLTI0NC40OSwtNjMwLjY2IC0yNDAuMiwtMTI5Ni4zOSAtMzUuMTgsLTE4ODkuMmwtMTM0MC4zNSAzNDU3LjIzYzg0NS4yMiwzMjcuNjYgMTc1My40NSwyMDguNjYgMjQ2NC42MywtMjQxLjg4IC00NzguODksLTMwMy4zOCAtODY4LjQ0LC03NTcuMDUgLTEwODkuMSwtMTMyNi4xNXoiLz4KICA8cGF0aCBjbGFzcz0iZmlsMyIgZD0iTTkzNzUuNzYgMTIyNTIuODFsNzMuODEgLTE5MC4zNWMtMjYuOTQsNjIuNDcgLTUxLjU1LDEyNi4wMSAtNzMuODEsMTkwLjM1eiIvPgogIDxwYXRoIGNsYXNzPSJmaWw0IiBkPSJNMTI5NjQuNjUgMTU3MTAuMDRsLTEzNDAuMzUgLTM0NTcuMjNjMjA1LDU5Mi44NSAyMDkuMzEsMTI1OC41NCAtMzUuMiwxODg5LjIgLTIyMC42Nyw1NjkuMSAtNjEwLjIsMTAyMi43NyAtMTA4OS4wNiwxMzI2LjE1IDcxMS4xNiw0NTAuNTQgMTYxOS40Miw1NjkuNTQgMjQ2NC42MSwyNDEuODh6Ii8+CiAgPHBhdGggY2xhc3M9ImZpbDUiIGQ9Ik0xMTU1MC41IDEyMDYyLjQ2bC0yNzEuMDcgLTY5OS4xOCAtMTU1OC44MSAwIC0yNzEuMDUgNjk5LjE4IC03My44MSAxOTAuMzVjLTIwNS4wMiw1OTIuODEgLTIwOS4zMSwxMjU4LjU0IDM1LjE4LDE4ODkuMiAyMjAuNjYsNTY5LjEgNjEwLjIxLDEwMjIuNzcgMTA4OS4xLDEzMjYuMTUgNDc4Ljg2LC0zMDMuMzggODY4LjM5LC03NTcuMDUgMTA4OS4wNiwtMTMyNi4xNSAyNDQuNTEsLTYzMC42NiAyNDAuMiwtMTI5Ni4zNSAzNS4yLC0xODg5LjJsLTczLjggLTE5MC4zNXoiLz4KIDwvZz4KPC9zdmc+Cg==">
+      <div class="sales-login-eyebrow">AVVERO SALES PERFORMANCE</div>
+      <h1>SALES REPORT</h1>
+      <p class="sales-login-subtitle">Analiza vânzărilor, evoluția portofoliului și rezultatele comerciale într-un singur loc.</p>
+      <div class="sales-login-tags">
+        <span>Vânzări</span>
+        <span>Portofoliu</span>
+        <span>Performanță</span>
+      </div>
+    </div>
+  </section>
+  <section class="sales-login-panel">
+    <form class="sales-login-card" id="salesLoginForm" autocomplete="off">
+
+      <p class="sales-login-card-title">Autentificare</p>
+      <p class="sales-login-platform">Introdu parola pentru a deschide analiza de vânzări.</p>
+      <input
+        class="sales-login-password"
+        id="salesPassword"
+        type="password"
+        placeholder="Parolă"
+        aria-label="Parolă"
+        autocomplete="off"
+        autofocus
+      >
+      <button class="sales-login-enter" type="submit">Autentificare</button>
+      <p class="sales-login-error" id="salesLoginError"></p>
+    </form>
+  </section>
+</div>
+
+<div class="app" id="salesApp" hidden>
 <header class="top"><div class="brand"><h1>Analiză vânzări</h1><p>S-E România | Ionuț Catrinoiu</p></div></header><noscript><div class="panel" style="margin-bottom:14px"><b>Datele sunt afișate în modul static.</b><div class="sub" style="margin:6px 0 0">Deschide fișierul în Safari pentru filtre, sortare și detalii interactive.</div></div></noscript>
 <section class="grid" id="kpis">
   <div class="card">
@@ -708,4 +1041,33 @@ function render(){
 function openClient(idx){const c=DB.clients[idx];document.getElementById('modalTitle').textContent=c.client;const p=c.total2025?c.diff/c.total2025*100:null;document.getElementById('modalSub').textContent=`2025: ${fmt(c.total2025)} | 2026: ${fmt(c.total2026)} | Evoluție: ${p===null?'Client nou':(p>0?'+':'')+pctf.format(p)+'%'}`;const max=Math.max(1,...c.y2025,...c.y2026);document.getElementById('clientChart').innerHTML=DB.months.map((m,i)=>`<div class="client-group"><div title="2025: ${fmt(c.y2025[i])}" class="client-bar" style="height:${c.y2025[i]/max*100}%;background:#aab6ca"></div><div title="2026: ${fmt(c.y2026[i])}" class="client-bar" style="height:${c.y2026[i]/max*100}%;background:#246bfd"></div><span class="client-month">${m.slice(0,3)}</span></div>`).join('');document.getElementById('modal').classList.add('open')}
 function closeModal(){document.getElementById('modal').classList.remove('open')}
 ['search','statusFilter','limitFilter'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',render));document.getElementById('periodFilter').addEventListener('change',()=>{overall();render()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeUniqueClientList()}});overall();render();try{renderUniqueClients()}catch(error){console.error('Eroare clienți unici:',error)}try{renderT2Growth()}catch(error){console.error('Eroare accelerare T2:',error)}
-</script></body></html>
+</script>
+<script>
+(function(){
+  const login = document.getElementById('salesLogin');
+  const app = document.getElementById('salesApp');
+  const form = document.getElementById('salesLoginForm');
+  const password = document.getElementById('salesPassword');
+  const error = document.getElementById('salesLoginError');
+
+  app.hidden = true;
+
+  form.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    if(password.value === 'sales123'){
+      login.hidden = true;
+      app.hidden = false;
+      error.textContent = '';
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    error.textContent = 'Parolă incorectă.';
+    password.value = '';
+    password.focus();
+  });
+})();
+</script>
+
+</body></html>
